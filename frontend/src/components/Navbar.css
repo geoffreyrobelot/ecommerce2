@@ -1,0 +1,96 @@
+.navbar {
+    width: 100%;
+    height: 10%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    z-index: 50;
+}
+
+.navbar_logo h2 {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar_logo .logo_link {
+    text-decoration: none;
+}
+
+.navbar_links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar_links > li {
+    padding-left: 3rem;
+}
+
+.navbar_links > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.cart_link {
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.cart_link:hover {
+    background: #009091;
+    color: white;
+}
+
+.shop_link {
+    background-color: #323232;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.shop_link:hover {
+    background: #009091;
+    color: white;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu > div {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+.menu:hover {
+    background-color: #2F2F2F;
+}
+
+@media (max-width: 960px) {
+    .navbar_links {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar_logo > h2 {
+        font-size: 1rem;
+    }
+}
